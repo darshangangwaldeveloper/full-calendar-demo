@@ -20,6 +20,8 @@ var FullCalendar = (function (exports) {
             appendStylesTo(styleEl, styleText);
         });
     }
+
+
     function ensureElHasStyles(el) {
         if (el.isConnected) {
             registerStylesRoot(el.getRootNode());
@@ -46,6 +48,7 @@ var FullCalendar = (function (exports) {
             hydrateStylesRoot(styleEl);
         }
     }
+    
     function hydrateStylesRoot(styleEl) {
         for (const styleText of styleTexts) {
             appendStylesTo(styleEl, styleText);
