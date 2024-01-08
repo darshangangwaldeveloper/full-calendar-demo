@@ -87,6 +87,7 @@ var FullCalendar = (function (exports) {
         }
         return '';
     }
+    
     // main
     // -------------------------------------------------------------------------------------------------
     if (typeof document !== 'undefined') {
