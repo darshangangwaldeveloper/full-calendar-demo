@@ -27,6 +27,7 @@ var FullCalendar = (function (exports) {
             registerStylesRoot(el.getRootNode());
         }
     }
+
     function registerStylesRoot(rootNode) {
         let styleEl = styleEls.get(rootNode);
         if (!styleEl || !styleEl.isConnected) {
@@ -65,6 +66,7 @@ var FullCalendar = (function (exports) {
         });
     }
     // nonce
+    
     // -------------------------------------------------------------------------------------------------
     let queriedNonceValue;
     function getNonceValue() {
