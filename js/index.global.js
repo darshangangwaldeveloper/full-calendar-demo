@@ -270,6 +270,7 @@ var FullCalendar = (function (exports) {
         ev.preventDefault();
     }
     // Event Delegation
+
     // ----------------------------------------------------------------------------------------------------------------
     function buildDelegationHandler(selector, handler) {
         return (ev) => {
@@ -314,6 +315,7 @@ var FullCalendar = (function (exports) {
     // triggered only when the next single subsequent transition finishes
     function whenTransitionDone(el, callback) {
         let realCallback = (ev) => {
+            //console,log("hello")
             callback(ev);
             transitionEventNames.forEach((eventName) => {
                 el.removeEventListener(eventName, realCallback);

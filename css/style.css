@@ -75,6 +75,7 @@ body {
 
 .sidenav-list .accordion-button:not(.collapsed) {
     background-color: transparent !important;
+    
 }
 
 .MiniCalendarBtns {
